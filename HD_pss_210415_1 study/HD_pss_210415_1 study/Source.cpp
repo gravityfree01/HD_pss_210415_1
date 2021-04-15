@@ -1,15 +1,20 @@
 #include<stdio.h>
 void main() {
-	int i =+ 2;
-	while (i<20) {
-		int j = 2;
-		while (j <= i+2) {
-			printf("%d", j);
+	int number = 2;
+	int i = 0;
+	while (i<4) {
+		int j = 0;
+		while (j <=i) {
+			printf("%d", number);
+			number += 2;
+			j ++;
 			printf(" ");
-			j++;
 		} 
 		i ++;
 		printf("\n");	
 	}
 	fgetc(stdin);
 }
+
+
+
